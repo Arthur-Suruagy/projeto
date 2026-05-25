@@ -74,11 +74,12 @@ width: 64px;
     left: 0;
     top:50%;
     transform:translateY(-50%) ;
+
+    animation: slide-dark 0.4s forwards;
 }
 
 .light #switch button {
-    
-    left: 32px;
+    animation: slide-light 0.4s forwards;
 }
 
  #switch span{
@@ -168,4 +169,18 @@ footer {
 
         --bg-url: url(./assets/bg-desktop-light.jpg);
     }
+}
+
+/* Animation */
+
+@keyframes slide-light {
+    from {left: 0;}
+
+    to {left: 50%;}
+}
+
+@keyframes slide-dark {
+    from {left: 50%;}
+
+    to {left: 0;}
 }
