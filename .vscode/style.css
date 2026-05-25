@@ -9,6 +9,7 @@ box-sizing: border-box;}
 --surface-color:rgba(255,255,255,0.05);
 --surface-color-hover:rgba(0,0,0,0.02);
 --social-color:rgba(255,255,255,0.2);
+--slide-color:rgba(255,255,255,0.2);
 --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
@@ -18,6 +19,7 @@ box-sizing: border-box;}
 --surface-color: rgba(0,0,0,0.05);
 --surface-color-hover:rgba(0,0,0,0.02);
 --social-color:rgba(0,0,0,0.1);
+--slide-color:rgba(0,0,0,0.1);
 --switch-bg-url: url(./assets/sun.svg);
 }
 
@@ -75,11 +77,15 @@ width: 64px;
     top:50%;
     transform:translateY(-50%) ;
 
-    animation: slide-dark 0.4s forwards;
+    animation: slide-dark 0.2s;
 }
 
+ #switch button:hover {
+    outline: 8px solid var(--slide-color);
+ }
+
 .light #switch button {
-    animation: slide-light 0.4s forwards;
+    animation: slide-light 0.2s forwards;
 }
 
  #switch span{
